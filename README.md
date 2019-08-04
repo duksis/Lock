@@ -1,6 +1,6 @@
-# Lock.app
+# Lock.app [![Build Status](https://travis-ci.org/duksis/Lock.svg?branch=master)](https://travis-ci.org/duksis/Lock)
 
-[![Build Status](https://travis-ci.org/duksis/Lock.svg?branch=master)](https://travis-ci.org/duksis/Lock) Locks your Mac
+Locks your Mac
 
 ---
 
