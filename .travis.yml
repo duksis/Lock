@@ -1,4 +1,6 @@
 os: osx
+before_install:
+  - brew install shellcheck
 script:
   - shellcheck Lock.app/Contents/MacOS/main.command scripts/*
 before_deploy: sh scripts/package_dmg.sh
