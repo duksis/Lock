@@ -27,7 +27,7 @@
   <key>CFBundleExecutable</key>
   <string>main.command</string>
   <key>CFBundleIconFile</key>
-  <string>cmd</string>
+  <string>lock</string>
   <key>NSMainNibFile</key>
   <string>main.nib</string>
 </dict>
