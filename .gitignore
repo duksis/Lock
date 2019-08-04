@@ -1,0 +1,4 @@
+dist
+tmp
+.DS_Store
+shellcheck-latest

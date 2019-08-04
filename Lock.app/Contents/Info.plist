@@ -5,7 +5,7 @@
   <key>CFBundleDevelopmentRegion</key>
   <string>English</string>
   <key>CFBundleGetInfoString</key>
-  <string>1.0, Copyright © 2019 Hugo Duksis, All Rights Reserved</string>
+  <string>1.0.1, Copyright © 2019 Hugo Duksis, All Rights Reserved</string>
   <key>CFBundleIdentifier</key>
   <string>com.yourcompany.ApplicationName</string>
   <key>CFBundleInfoDictionaryVersion</key>
@@ -15,11 +15,11 @@
   <key>CFBundlePackageType</key>
   <string>BNDL</string>
   <key>CFBundleShortVersionString</key>
-  <string>1.0</string>
+  <string>1.0.1</string>
   <key>CFBundleSignature</key>
   <string>????</string>
   <key>CFBundleVersion</key>
-  <string>1.0</string>
+  <string>1.0.1</string>
   <key>NSHumanReadableCopyright</key>
   <string>Copyright © 2019 Hugo Duksis, All Rights Reserved.</string>
   <key>NSPrincipalClass</key>
@@ -27,7 +27,7 @@
   <key>CFBundleExecutable</key>
   <string>main.command</string>
   <key>CFBundleIconFile</key>
-  <string>cmd</string>
+  <string>lock</string>
   <key>NSMainNibFile</key>
   <string>main.nib</string>
 </dict>
