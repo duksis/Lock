@@ -1,0 +1,12 @@
+os: osx
+script:
+  - shellcheck Lock.app/Contents/MacOS/main.command scripts/*
+before_deploy: sh scripts/package_dmg.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: qUy1jdKoRenMr1Goe5KcqueiPA8+Y5kXGn4TInqB9OKdcA97IYA7VVXpl3GOn8R4azwnaN+qAbpqM/+E0+eHUC+YvaSux1O5XR8qxzGKjdLukshjlNHNDmyhBUNrbAPWwcOZ/HflEieOhat0XSmPU/14g4W9UUfOiINVbdThEfCmOXmtmegyXmbfisj1Zwsua5Qp85+S39mP4+ND6rOv66IzmmAkk7CsEmwk+GJOUVPxICrVXH0ZRvr9/8YxPu+5cGr+BBKNuTZdSm7dbl/eOLVmyv0qSjMW3SJ6ct5S8yf0gWPgtKcIiQBscACJPfHxMoMfTn4byr4XIiqFO6rUuTwContjGaf6a7dTnCnYv2G4tT+BHk8ik4lxqtgVeLeftQtd8/73YN3PhLeG6NNYpCXdRhKU7cyhkg5W2TUdKj9wzHb4fQ/4xhe6gfaSSlvNPoM6z143A5SP3P5M2Z9DJDmYau6by3O6OB0VjLtnMtShC02SFwPNjmSlPb13zuKp7+tlz7ZKQYiIM3Uo1pL56gw+0vn96mcAk2vIk1cOtKcLB+PCLI27nencCg7mirVf01AN6GFA72dAig3EOUNq8SWUjsgtkNl+3PnQHLixiuj1f0BUevoRofCRu43EUVHKtgl7ZxaQ6/lAxlVnreglZpqkEwyCs0aXOj1GGVsAEhQ=
+  file: dist/lock.dmg
+  skip_cleanup: true
+  on:
+    tags: true

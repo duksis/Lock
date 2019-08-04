@@ -1,6 +1,6 @@
 # Lock.app
 
-Locks your Mac
+[![Build Status](https://travis-ci.org/duksis/Lock.svg?branch=master)](https://travis-ci.org/duksis/Lock) Locks your Mac
 
 ---
 
