@@ -1,8 +1,11 @@
 os: osx
+cache:
+  directories:
+    - $HOME/shellcheck-latest
 before_install:
-  - brew install shellcheck
+  - sh scripts/install_shellcheck.sh
 script:
-  - shellcheck Lock.app/Contents/MacOS/main.command scripts/*
+  - ./shellcheck-latest/shellcheck Lock.app/Contents/MacOS/main.command scripts/*
 before_deploy: sh scripts/package_dmg.sh
 deploy:
   provider: releases
