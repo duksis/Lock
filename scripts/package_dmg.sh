@@ -8,7 +8,7 @@ _APP_PATH="Lock.app"
 _IMAGE_NAME='lock'
 _TMP_IMAGE="tmp/$_IMAGE_NAME-$(date +"%Y%m%d_%H%M%S")-tmp.dmg"
 _DEST_IMAGE="dist/$_IMAGE_NAME.dmg"
-_EXP_IMG_SIZE=68534
+_EXP_IMG_SIZE=68000
 
 # Check is app available under given path
 if [ ! -d "$_APP_PATH" ]; then
