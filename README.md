@@ -20,6 +20,13 @@ A simple Mac application that does only one thing
 3. Move `Lock` app to your `Applications` folder
 
 
+## Default ways
+
+The default way to lock your macOS Mojave machine is **Command+Control+Q**
+
+for more options there is a detailed list on [macpaw](https://macpaw.com/how-to/lock-mac-screen)
+
+
 ## Development
 
 Clone the repo:
