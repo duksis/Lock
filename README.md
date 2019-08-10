@@ -1,4 +1,4 @@
-# Lock.app [![Build Status](https://travis-ci.org/duksis/Lock.svg?branch=master)](https://travis-ci.org/duksis/Lock)
+# ![logo](./assets/lock.iconset/icon_32x32.png) Lock.app [![Build Status](https://travis-ci.org/duksis/Lock.svg?branch=master)](https://travis-ci.org/duksis/Lock)
 
 Locks your Mac
 
@@ -9,6 +9,8 @@ Locks your Mac
 
 A simple Mac application that does only one thing
 ----> It locks your Mac!
+
+![lock through spotlight](./assets/lock_in_action.gif)
 
 
 ## Instalation
