@@ -1,0 +1,11 @@
+#!/bin/sh
+
+__new_version="$1"
+
+sed -i '' -E "s/[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*/${__new_version:?}/g" Lock.app/Contents/Info.plist
+echo "$__new_version" > VERSION
+
+git add Lock.app/Contents/Info.plist
+git add VERSION
+
+git commit -v -m "Bump version to $__new_version"
