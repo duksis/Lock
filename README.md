@@ -13,7 +13,7 @@ A simple Mac application that does only one thing
 ![lock through spotlight](./assets/lock_in_action_small.gif)
 
 
-## Instalation
+## Installation
 
 1. Download [the image](https://github.com/duksis/Lock/releases/download/v1.0.2/lock.dmg)
 2. Open it
@@ -45,7 +45,7 @@ Clone the repo:
 git clone git@github.com:duksis/Lock
 ```
 
-After making changes install the development version localy:
+After making changes install the development version locally:
 ```
 cp -Rv Lock/Lock.app /Applications/
 ```
@@ -55,7 +55,7 @@ cp -Rv Lock/Lock.app /Applications/
 
 1. run `scripts/bump_version NEW.VERSION.NUMBER`
 2. push your changes
-3. create a [new relase](https://github.com/duksis/Lock/releases/new)
+3. create a [new release](https://github.com/duksis/Lock/releases/new)
 
 
 ## License
