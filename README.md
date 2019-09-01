@@ -10,7 +10,7 @@ Locks your Mac
 A simple Mac application that does only one thing
 ----> It locks your Mac!
 
-![lock through spotlight](./assets/lock_in_action.gif)
+![lock through spotlight](./assets/lock_in_action_small.gif)
 
 
 ## Instalation
