@@ -27,6 +27,17 @@ The default way to lock your macOS Mojave machine is **Command+Control+Q**
 for more options there is a detailed list on [macpaw](https://macpaw.com/how-to/lock-mac-screen)
 
 
+## Locking from Command-line
+
+The [core](./Lock.app/Contents/MacOS/main.command) of this app is a simple one line call to one of MacOS core services
+and if you spend most of your time in the command-line you can just create a alias for it
+within your shell configuration (~/.bashrc, ~/zshrc ...)
+
+```sh
+alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
+```
+
+
 ## Development
 
 Clone the repo:
