@@ -2,8 +2,6 @@
 
 Locks your Mac
 
----
-
 
 ## Intro
 
@@ -18,6 +16,23 @@ A simple Mac application that does only one thing
 1. Download [the image](https://github.com/duksis/Lock/releases/download/v1.0.2/lock.dmg)
 2. Open it
 3. Move `Lock` app to your `Applications` folder
+
+
+## Background
+
+Was using [Alftred app](https://www.alfredapp.com) for multiple years and recently realised that
+from all of it's features and fancy configuration I have set up long time ago I was using exactly
+nothing. I was still using it every day, but just for two things:
+1. opening a application (mainly iTerm and Chrome)
+2. Locking my machine whenever I was leaving
+
+So the first thing regular Spotlight can do as well, for my new setup I decided on the minimalist
+approach. After a week or so I realised that I can't get used to locking with `⌘⌃Q` and hot corners
+are not a solution, but a problem by themselves.
+
+Instead of switching back to Alfread I decided to create a simple application that is just locking
+the machine when it is triggered and name it `Lock` this way Spotlight should be able to find
+it and suggest you it whenever you are typing `Lock` hopefully already on the first letters.
 
 
 ## Default ways
@@ -36,6 +51,12 @@ within your shell configuration (~/.bashrc, ~/zshrc ...)
 ```sh
 alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
 ```
+
+
+## Known issues
+
+Spotlight does not learn from your actions like Alfred does - if you have multiple applications
+with `lock` in their name or description the lock app might not come up in the first place.
 
 
 ## Development
