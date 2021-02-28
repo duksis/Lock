@@ -10,6 +10,14 @@ FILEPATH=$(dirname "$0")
 BASEPATH=${FILEPATH%/*/*/*}
 echo "$BASEPATH"
 
-/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend
+CGSESSION_PATH="/System/Library/CoreServices/\"Menu Extras\"/User.menu/Contents/Resources/CGSession"
+
+if [ -f "$FILE" ]; then
+  # Susspend session with CGSession
+  $CGSESSION_PATH -suspend
+else
+  # Susspend session by keystrokes through osascript
+  osascript -e 'tell application "System Events" to keystroke "q" using {command down,control down}'
+fi
 
 exit 0

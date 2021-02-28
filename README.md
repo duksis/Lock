@@ -16,6 +16,7 @@ A simple Mac application that does only one thing
 1. Download [the image](https://github.com/duksis/Lock/releases/download/v1.0.2/lock.dmg)
 2. Open it
 3. Move `Lock` app to your `Applications` folder
+4. In case of Big Sur you might need to enable `Preferences -> Security & Privacy -> Accessibility` and check the checkbox next to the Terminal App
 
 
 ## Background
