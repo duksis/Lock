@@ -50,7 +50,7 @@ and if you spend most of your time in the command-line you can just create a ali
 within your shell configuration (~/.bashrc, ~/zshrc ...)
 
 ```sh
-alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
+alias lock='pmset sleepnow'
 ```
 
 
