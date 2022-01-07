@@ -10,11 +10,11 @@ FILEPATH=$(dirname "$0")
 BASEPATH=${FILEPATH%/*/*/*}
 echo "$BASEPATH"
 
-CGSESSION_PATH='(-lh "/System/Library/CoreServices/\"Menu Extras\"/User.menu/Contents/Resources/CGSession")'
+SLEEP_CMD='pmset'
 
 if [ -f "$FILE" ]; then
-  # Susspend session with CGSession
-  "${CGSESSION_PATH}" -suspend
+  # Susspend session with pmset
+  "${SLEEP_CMD}" sleepnow
 else
   # Susspend session by keystrokes through osascript
   osascript -e 'tell application "System Events" to keystroke "q" using {command down,control down}'
