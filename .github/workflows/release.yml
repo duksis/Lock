@@ -1,7 +1,7 @@
-on:
-  push:
-    tags:
-      - 'v*'
+on: push
+  #  push:
+  #    tags:
+  #      - 'v*'
 
 name: Build release assets
 
@@ -14,12 +14,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Build
         run: sh scripts/package_dmg.sh
-      - name: Upload release asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload release assets
+        uses: softprops/action-gh-release@v2
         with:
-          upload_url: https://github.com/duksis/Lock/releases/tag/${{ github.ref }}
-          asset_path: ./dist/lock.dmg
-          asset_name: lock.dmg
-          asset_content_type: application/octet-stream
+          files: dist/lock.dmg
+          tag_name: v1.1.1
