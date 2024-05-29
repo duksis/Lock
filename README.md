@@ -1,4 +1,4 @@
-# ![logo](./assets/lock.iconset/icon_32x32.png) Lock.app [![Build Status](https://travis-ci.org/duksis/Lock.svg?branch=master)](https://travis-ci.org/duksis/Lock)
+# ![logo](./assets/lock.iconset/icon_32x32.png) Lock.app [![Build Status](https://github.com/duksis/Lock/actions/workflows/test.yml/badge.svg)](https://github.com/duksis/Lock/actions/workflows/test.yml)
 
 Locks your Mac
 
