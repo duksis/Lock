@@ -1,0 +1,31 @@
+name: Run Tests
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - uses: actions/cache@v4
+      id: cache
+      with:
+        path: ./shellcheck-latest
+        key: ${{ runner.os }}-shellcheck
+
+    - name: Install shellcheck
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: sh ./scripts/install_shellcheck.sh
+
+    - name: Execute shellcheck
+      run: ./shellcheck-latest/shellcheck Lock.app/Contents/MacOS/main.command scripts/*
+
+    - name: Save to cache
+      if: steps.cache.outputs.cache-hit != 'true'
+      id: cache-save
+      uses: actions/cache/save@v4
+      with:
+        path: ./shellcheck-latest
+        key: ${{ steps.cache.outputs.cache-primary-key }}
